@@ -15,6 +15,12 @@ Used languages :
 -Javascript
 -JQUERY
 
+Project structure :
+-> index.html
+-> assets -> style.css
+          -> Jscript.js
+          -> README.md
+          
 Prerequisites :
 
 Browser : Safari or Firefox
