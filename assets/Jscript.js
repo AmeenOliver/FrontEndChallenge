@@ -1,10 +1,10 @@
-	/*
-App Name 	: Trending Last 30 days Repository 	-->
-Author 		: Amine EL YOUBI					-->
-Created 	: 22/July/2020 						-->
-Last Modif	: NaN 								-->
-Scope 		: Front End Challenge				-->
-File 		: assets/jscript.js					-->
+/*
+App Name 	: Trending Last 30 days Repository 	
+Author 		: Amine EL YOUBI					
+Created 	: 22/July/2020 						
+Last Modif	: NaN 								
+Scope 		: Front End Challenge				
+File 		: assets/jscript.js					
 */
 
 // Description of section : Declaration of variables var add = '';
@@ -14,7 +14,13 @@ var score = '';
 var desc = '';
 var issues = '';
 
+// Function name : AddElement
+// Arguments : 
+// 		name(the name of the repository), 	owner(the owner of the repo taken usinf the "Login":Item), description(Desc of the repo),
+//		Score(As demanded), issues(NB of the open issues regarding this repository)
 // Description of section : Implementation of the main function responsible for adding repo elements
+
+//Implementation :
 function AddElement(name, owner, description, score, issues){
 					add += 	'<div id="repository">';
 					add += 	'<div id="owner">';					
@@ -32,7 +38,11 @@ function AddElement(name, owner, description, score, issues){
 					$('#container').append(add);
 }
 
-// Description of section : Implementation of the main function responsible for adding repo elements
+// Function name : showElements
+// Arguments : Link(link from where ye can get the json data for the last 30 days posted repos)
+// Description of section : Implementation of the main function responsible for getting JSON data from the Git API, and parsing the explored datas.
+
+//Implementation :
 function showElements(link){
 	$.getJSON(link, function(data){
 			$.each(data, function(key, value){
@@ -67,6 +77,7 @@ function showElements(link){
 }
 
 // Description of section : Process when the page is ready
+//Implementation : Main function
 $(document).ready(function(){
 		// Get Json data for external (http)
 			var link1 = "https://api.github.com/search/repositories?q=created:>2017-10-22&sort=stars&order=desc";
