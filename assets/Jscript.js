@@ -7,7 +7,7 @@ Scope 		: Front End Challenge
 File 		: assets/jscript.js					
 */
 
-// Description of section : Declaration of variables var add = '';
+// Description of section : Declaration of variables 
 var add = '';
 var name = '';
 var score = '';
