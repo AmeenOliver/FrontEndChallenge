@@ -1,0 +1,48 @@
+/* 
+App Name 	: Trending Last 30 days Repository 	-->
+Author 		: Amine EL YOUBI					-->
+Created 	: 22/July/2020 						-->
+Last Modif	: NaN 								-->
+Scope 		: Front End Challenge				-->
+File 		: assets/style.css					--> 
+*/
+
+div#repository {
+			width:100%;
+  			padding:5px;
+  			text-align:left;
+			}
+div {
+	text-align:left;
+	}
+div#owner {
+			border:2px solid green;
+			width:150px;
+			float:left;
+			margin:5px 5px 5px 5px;
+			height:150px;
+			vertical-align: text-bottom;
+			}
+
+div#description {
+			width:900px;
+  			margin:0 5px 5px 5px;
+  			min-height:150px;
+  			_height:250px;
+  			position: relative;
+			}
+
+#list{
+			text-align: bottom;
+			float: left;
+			left: 0;
+			}
+#list li{
+			display: inline;
+			border:1px solid blue;
+			padding: 2px;
+			margin: 0 0 0 5px;
+			background-color: grey;
+			color: white;
+			left: 0;
+	}	
